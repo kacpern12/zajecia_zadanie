@@ -17,7 +17,11 @@ bool czy_doskonala(int n) {
 int main() {
     int n;
     if (cin >> n) {
+	if(n>0){
         cout << n <<(czy_doskonala(n) ? " jest liczba doskonala " : " nie jest liczba doskonala")<< endl;
+	}else{
+	cout<<"Blad: To nie jest liczba dodatnia naturalna"<<endl;
+	}
     }
     return 0;
 }
